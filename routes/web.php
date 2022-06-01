@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\QuarryController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -15,9 +16,15 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    if(Auth::check())
+    {
+        return view('Quarry.index');
+    }
+    else{
+        return view('auth.login');
+    }
 });
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('quarries',QuarryController::class);

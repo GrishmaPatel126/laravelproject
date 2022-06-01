@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\QuarriesValidation;
 use App\Models\Quarry;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,7 @@ class QuarryController extends Controller
     public function index()
     {
         $quarries = Quarry::all();
-        return view()
+        return view('Quarry.index',compact('quarries'));
     }
 
     /**
@@ -25,7 +26,7 @@ class QuarryController extends Controller
      */
     public function create()
     {
-        //
+        return view('Quarry.create');
     }
 
     /**
@@ -34,9 +35,11 @@ class QuarryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(QuarriesValidation $request)
     {
-        //
+        $input = $request->validated();
+        Quarry::create($input);
+        return redirect()->route('quarries.index');
     }
 
     /**
@@ -47,7 +50,7 @@ class QuarryController extends Controller
      */
     public function show(Quarry $quarry)
     {
-        //
+        return view('Quarry.show',compact('quarry'));
     }
 
     /**
@@ -58,7 +61,7 @@ class QuarryController extends Controller
      */
     public function edit(Quarry $quarry)
     {
-        //
+        return view('Quarry.edit',compact('quarry'));
     }
 
     /**
@@ -70,7 +73,11 @@ class QuarryController extends Controller
      */
     public function update(Request $request, Quarry $quarry)
     {
-        //
+        dd("sdfghjk");
+        $input = $request->all();
+        $quarry = Quarry::find($quarry->id);
+        $quarry->fill($input)->save();
+        return redirect()->route('quarries.index');
     }
 
     /**
@@ -81,6 +88,7 @@ class QuarryController extends Controller
      */
     public function destroy(Quarry $quarry)
     {
-        //
+        $quarry->delete();
+        return redirect()->route('quarries.index');
     }
 }
