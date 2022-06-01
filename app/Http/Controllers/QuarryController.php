@@ -14,7 +14,8 @@ class QuarryController extends Controller
      */
     public function index()
     {
-        //
+        $quarries = Quarry::all();
+        return view()
     }
 
     /**
