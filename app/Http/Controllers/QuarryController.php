@@ -73,7 +73,6 @@ class QuarryController extends Controller
      */
     public function update(Request $request, Quarry $quarry)
     {
-        dd("sdfghjk");
         $input = $request->all();
         $quarry = Quarry::find($quarry->id);
         $quarry->fill($input)->save();

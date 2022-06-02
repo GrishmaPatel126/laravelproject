@@ -20,7 +20,11 @@
         </thead>
         <tbody>
             @foreach ($quarries as $quarry )
+            @php
+                $net_weight = $quarry->gross_weight + $quarry->tar_weight;
+            @endphp
             <tr>
+
                 <td scope="row"><a href="{{ route('quarries.show',$quarry->id) }}">{{ $quarry->name }}  </a></td>
                 <td>{{ $quarry->number }}</td>
                 <td>{{ $quarry->address }}</td>
@@ -28,7 +32,7 @@
                 <td>{{ $quarry->material_type }}</td>
                 <td>{{ $quarry->gross_weight }}</td>
                 <td>{{ $quarry->tar_weight }}</td>
-                <td>{{ $quarry->net_weight }}</td>
+                <td>{{ $net_weight }}</td>
                 <td>{{ $quarry->payment }}</td>
                 <td>{{ $quarry->payment_status }}</td>
                 <td>{{ $quarry->material_delivery_status }}</td>

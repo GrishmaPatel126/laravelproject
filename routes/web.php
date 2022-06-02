@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', function () {
     if(Auth::check())
     {
-        return view('Quarry.index');
+        return redirect()->route('quarries.index');
     }
     else{
         return view('auth.login');

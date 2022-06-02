@@ -12,7 +12,7 @@
 
 <div class="form-group">
     <label for="address">Address</label>
-    <textarea class="form-control" name="address" id="adddress" rows="3" value="{{ $quarry->name ?? '' }}"></textarea>
+    <input type="text"class="form-control" name="address" id="address" rows="3" value="{{ $quarry->address ?? ' ' }}">
 </div>
 
 <div class="form-group">
@@ -40,11 +40,11 @@
 
 <div class="form-group">
     <label for="gross_weight">Gross Weight</label>
-    <input type="text" name="gross_weight" id="gross_weight" class="form-control" placeholder="" value="{{ $quarry->gross_weight ?? '' }}">
+    <input type="text" name="gross_weight" id="gross_weight" class="form-control input gross_weight" placeholder="" value="{{ $quarry->gross_weight ?? '' }}">
     <label for="tar_weight">Tar Weight</label>
-    <input type="text" name="tar_weight" id="tar_weight" class="form-control" placeholder="" value="{{ $quarry->tar_weight ?? '' }}">
+    <input type="text" name="tar_weight" id="tar_weight" class="form-control  input tar_weight" placeholder="" value="{{ $quarry->tar_weight ?? '' }}">
     <label for="net_weight">Net Weight</label>
-    <input type="text" name="net_weight" id="net_weight" class="form-control" placeholder="" value="{{ $quarry->net_weight ?? '' }}">
+    <input type="text" name="net_weight" id="net_weight" class="form-control" disabled placeholder="" value="{{ $quarry->net_weight ?? '' }}">
 </div>
 
 <div class="form-group">
@@ -53,10 +53,8 @@
     <label for="payment_status">Payment Status</label>
     <select class="form-control" name="payment_status" id="payment_status" value = "{{ $quarry->payment_status ?? '' }}">
         <option value="">Select Payment Status</option>
-        <option value="Advanced Full Payment">Advanced Full Payment</option>
-        <option value="Advanced Half Payment">Advanced Half Payment</option>
-        <option value="Left">Left</option>
-        <option value="Done Payment">Done Payment</option>
+        <option value="Payment Left">Payment Left</option>
+        <option value="Payment Done">Payment Done</option>
     </select>
 </div>
 
@@ -64,8 +62,10 @@
   <label for="material_delivery_status">Delivery Status</label>
   <select class="form-control" name="material_delivery_status" id="material_delivery_status" value= " {{ $quarry->material_delivery_status ?? '' }}">
     <option value=""> Select Delivery Status</option>
-    <option value="Done">Done</option>
-    <option value="Left">Left</option>
+    <option value="Deliverd">Deliverd</option>
+    <option value="Not Delivered">Not Deliverd</option>
   </select>
 </div>
+
+<script src="{{ asset('js/cal_weight.js') }}"></script>
 

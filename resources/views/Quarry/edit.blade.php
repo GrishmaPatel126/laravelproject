@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
-<h2 class="text-center">Create </h2>
+<h2 class="text-center">Edit </h2>
 <div class="container ">
 
-    <form action="{{ route('quarries.update',$quarry->id)}}" method="post">
+    <form action="{{ route('quarries.update',$quarry->id)}}" method="post" enctype="multipart/form-data">
         @csrf
         @method('PATCH')
     @include('Quarry.form')
