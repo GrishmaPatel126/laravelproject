@@ -5,7 +5,7 @@
 
     <a href="{{ route('quarries.create')}}">Create</a>
 
-<table class="table table-striped table-inverse table-responsive">
+<table class="table" id="myTable">
     <thead class="thead-inverse">
         <tr>
             <th>Name</th>
@@ -48,3 +48,4 @@
         </tbody>
 </table>
 @endsection
+<Script src="{{asset('js/table.js')}}"></Script>

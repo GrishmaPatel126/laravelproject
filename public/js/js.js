@@ -7,17 +7,8 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
-
-/***/ "./resources/js/cal_weight.js":
-/*!************************************!*\
-  !*** ./resources/js/cal_weight.js ***!
-  \************************************/
-/***/ (() => {
-
-eval("$(document).ready(function () {\n  $('#gross_weight').keyup(function () {\n    $('#net_weight').val($(\"#gross_weight\").val() + \" \" + $('#tar_weight').val());\n  });\n  $('#tar_weight').keyup(function () {\n    $('#net_weight').val($(\"#gross_weight\").val() + \" \" + $(this).val());\n  });\n  $(\"body\").on('click', function () {\n    $('#net_weight').val($(\"#gross_weight\").val() + \"  \" + $('#tar_weight').val());\n  });\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyIkIiwiZG9jdW1lbnQiLCJyZWFkeSIsImtleXVwIiwidmFsIiwib24iXSwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL2pzL2NhbF93ZWlnaHQuanM/Y2FjNCJdLCJzb3VyY2VzQ29udGVudCI6WyIkKGRvY3VtZW50KS5yZWFkeShmdW5jdGlvbigpe1xuXG4gICAgJCgnI2dyb3NzX3dlaWdodCcpLmtleXVwKGZ1bmN0aW9uKCl7XG4gICAgICAgICQoJyNuZXRfd2VpZ2h0JykudmFsKCQoXCIjZ3Jvc3Nfd2VpZ2h0XCIpLnZhbCgpICsgXCIgXCIgKyAkKCcjdGFyX3dlaWdodCcpLnZhbCgpKTtcbiAgICB9KTtcblxuICAgICQoJyN0YXJfd2VpZ2h0Jykua2V5dXAoZnVuY3Rpb24oKXtcbiAgICAgICAgJCgnI25ldF93ZWlnaHQnKS52YWwoJChcIiNncm9zc193ZWlnaHRcIikudmFsKCkgKyBcIiBcIiArICQodGhpcykudmFsKCkpO1xuICAgIH0pO1xuXG4gICAgJChcImJvZHlcIikub24oJ2NsaWNrJyxmdW5jdGlvbigpe1xuICAgICAgICAkKCcjbmV0X3dlaWdodCcpLnZhbCgkKFwiI2dyb3NzX3dlaWdodFwiKS52YWwoKSArIFwiICBcIiArICQoJyN0YXJfd2VpZ2h0JykudmFsKCkpO1xuICAgIH0pO1xufSk7XG5cbiJdLCJtYXBwaW5ncyI6IkFBQUFBLENBQUMsQ0FBQ0MsUUFBRCxDQUFELENBQVlDLEtBQVosQ0FBa0IsWUFBVTtFQUV4QkYsQ0FBQyxDQUFDLGVBQUQsQ0FBRCxDQUFtQkcsS0FBbkIsQ0FBeUIsWUFBVTtJQUMvQkgsQ0FBQyxDQUFDLGFBQUQsQ0FBRCxDQUFpQkksR0FBakIsQ0FBcUJKLENBQUMsQ0FBQyxlQUFELENBQUQsQ0FBbUJJLEdBQW5CLEtBQTJCLEdBQTNCLEdBQWlDSixDQUFDLENBQUMsYUFBRCxDQUFELENBQWlCSSxHQUFqQixFQUF0RDtFQUNILENBRkQ7RUFJQUosQ0FBQyxDQUFDLGFBQUQsQ0FBRCxDQUFpQkcsS0FBakIsQ0FBdUIsWUFBVTtJQUM3QkgsQ0FBQyxDQUFDLGFBQUQsQ0FBRCxDQUFpQkksR0FBakIsQ0FBcUJKLENBQUMsQ0FBQyxlQUFELENBQUQsQ0FBbUJJLEdBQW5CLEtBQTJCLEdBQTNCLEdBQWlDSixDQUFDLENBQUMsSUFBRCxDQUFELENBQVFJLEdBQVIsRUFBdEQ7RUFDSCxDQUZEO0VBSUFKLENBQUMsQ0FBQyxNQUFELENBQUQsQ0FBVUssRUFBVixDQUFhLE9BQWIsRUFBcUIsWUFBVTtJQUMzQkwsQ0FBQyxDQUFDLGFBQUQsQ0FBRCxDQUFpQkksR0FBakIsQ0FBcUJKLENBQUMsQ0FBQyxlQUFELENBQUQsQ0FBbUJJLEdBQW5CLEtBQTJCLElBQTNCLEdBQWtDSixDQUFDLENBQUMsYUFBRCxDQUFELENBQWlCSSxHQUFqQixFQUF2RDtFQUNILENBRkQ7QUFHSCxDQWJEIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL2pzL2NhbF93ZWlnaHQuanMuanMiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/js/cal_weight.js\n");
-
-/***/ }),
 
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
@@ -25,7 +16,6 @@ eval("$(document).ready(function () {\n  $('#gross_weight').keyup(function () {\
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9hcHAuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAuc2Nzcz9hODBiIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/app.scss\n");
 
 /***/ })
@@ -116,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/js/cal_weight": 0,
+/******/ 			"/js/js": 0,
 /******/ 			"css/app": 0
 /******/ 		};
 /******/ 		
@@ -167,7 +157,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/cal_weight.js")))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	

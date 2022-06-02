@@ -9,8 +9,7 @@ $(document).ready(function(){
     });
 
     $("body").on('click',function(){
-        $('#net_weight').val($("#gross_weight").val() + " " + $('#tar_weight').val());
+        $('#net_weight').val($("#gross_weight").val() + "  " + $('#tar_weight').val());
     });
 });
 
-    
