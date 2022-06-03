@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\QuarryController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -28,3 +29,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::resource('quarries',QuarryController::class);
+Route::resource('students',StudentController::class);
