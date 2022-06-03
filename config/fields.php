@@ -24,31 +24,7 @@ return
         'label' => ['type' => 'label', 'name' => 'class', 'text' => 'Class'],
         'select' => ['type' => 'select', 'name' => 'class', 'list' => ['Class 5' => 'Class 5','Class 6' => 'Class 6','Class 7' => 'Class 7','Class 8' => 'Class 8','Class 9' => 'Class 9','Class 10' => 'Class 10'], 'attributes' => ['class' => 'form-control', 'id' => 'class','placeholder' => 'Select Class']],
     ],
-    'subject' => [
-        'label' => ['type' => 'label', 'name' => 'subject', 'text' => 'Subject'],
-        'checkbox' => [
-        [
-            'label' => ['type' => 'label', 'name' => 'subject', 'text' => 'English'],
-            'checkbox' => ['type' => 'checkbox', 'name' => 'subject[]',  'value' => 'English',  'attributes' => ['class' => 'form-control', 'id' => 'subject']]
-        ],
-        [
-            'label' => ['type' => 'label', 'name' => 'subject', 'text' => 'Maths'],
-            'checkbox' => ['type' => 'checkbox', 'name' => 'subject[]',  'value' => 'Maths',  'attributes' => ['class' => 'form-control', 'id' => 'subject']]
-        ],
-        [
-            'label' => ['type' => 'label', 'name' => 'subject', 'text' => 'History'],
-            'checkbox' => ['type' => 'checkbox', 'name' => 'subject[]',  'value' => 'History',  'attributes' => ['class' => 'form-control', 'id' => 'subject']]
-        ],
-        [
-            'label' => ['type' => 'label', 'name' => 'subject', 'text' => 'Science'],
-            'checkbox' => ['type' => 'checkbox', 'name' => 'subject[]',  'value' => 'Science',  'attributes' => ['class' => 'form-control', 'id' => 'subject']]
-        ],
-        [
-            'label' => ['type' => 'label', 'name' => 'subject', 'text' => 'Art'],
-            'checkbox' => ['type' => 'checkbox', 'name' => 'subject[]',  'value' => 'Art',  'attributes' => ['class' => 'form-control', 'id' => 'subject']]
-        ],
-    ],
-    ],
+   
     'clubs' => [
         'label' => ['type' => 'label', 'name' => 'clubs', 'text' => 'Clubs'],
         'select' => ['type' => 'select', 'name' => 'clubs', 'list' => ['Book Clubs' => 'Book Clubs','Drama Clubs' => 'Drama Clubs','Music Clubs' => 'Music Clubs','Cricket Clubs' => 'Cricket Clubs',], 'attributes' => ['class' => 'form-control', 'id' => 'class','placeholder' => 'Select Class']],
