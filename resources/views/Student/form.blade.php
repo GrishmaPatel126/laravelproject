@@ -5,19 +5,19 @@ $fieldcheckbox = config('checkboxfields');
 @foreach ($fieldsoption as $form)
     <div class='form-group row'>
         @foreach ($form as $type => $attibutes)
-            <div class="col-sm-11">
+            <div class="col-sm-12">
+                @if ($type == 'checkbox')
+                    @foreach ($attibutes as $checkbox => $attibutes)
+                        @foreach ($attibutes as $check => $attibutes)
+                            @include('fields.' . $check, $attibutes)
+                        @endforeach
+                    @endforeach
+            </div>
+        @else
+            <div class="col-sm-12">
                 @include('fields.' . $type, $attibutes)
             </div>
-        @endforeach
-    </div>
+        @endif
 @endforeach
-{{-- @foreach ($fieldcheckbox as $form)
-    <div class='form-group row'>
-        @foreach ($form as $type => $attibutes)
-
-        <div class="col-sm-11">
-            @include('fields.' . $type, $attibutes)
-        </div>
-        @endforeach
-    </div>
-@endforeach --}}
+</div>
+@endforeach

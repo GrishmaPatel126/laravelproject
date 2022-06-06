@@ -39,6 +39,7 @@ class StudentController extends Controller
     public function store(StudentValidation $request)
     {
         $input = $request->validated();
+        $input['subject'] = implode(' , ',$input['subject']);
         Student::create($input);
         return redirect()->route('students.index');
     }
@@ -75,6 +76,7 @@ class StudentController extends Controller
     public function update(Request $request, Student $student)
     {
         $input = $request->all();
+        $input['subject'] = implode(' , ',$input['subject']);
         $student = Student::find($student->id);
         $student->fill($input)->save();
         return redirect()->route('students.index');
@@ -89,6 +91,6 @@ class StudentController extends Controller
     public function destroy(Student $student)
     {
         $student->delete();
-        return redirect()->route('students.index');
+        return redirect()->route('students');
     }
 }

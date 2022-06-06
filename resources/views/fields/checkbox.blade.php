@@ -1,3 +1,2 @@
-
-{!! Form::{$attibutes['type']}($attibutes['name'], $attibutes['value'], $attibutes['attributes']) !!}
+{!! Form::{$attibutes['type']}($attibutes['name'], $attibutes['value']) !!}
 

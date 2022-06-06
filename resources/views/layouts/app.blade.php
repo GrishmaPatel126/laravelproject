@@ -35,7 +35,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-                        <a href="{{ route('students.index')}}" class="text-white">Student</a>
+                        <a class="navbar-brand" href="{{ route('students.index')}}">
+                            Student
+                          </a>
+                          <a class="navbar-brand" href="{{ route('teachers.index')}}">
+                            Teacher
+                          </a>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

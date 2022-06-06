@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\CalculateController;
 use App\Http\Controllers\QuarryController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\TeacherController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -30,3 +32,5 @@ Auth::routes();
 
 Route::resource('quarries',QuarryController::class);
 Route::resource('students',StudentController::class);
+Route::resource('teachers',TeacherController::class);
+Route::resource('calculators',CalculateController::class);
