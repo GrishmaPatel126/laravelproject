@@ -29,23 +29,23 @@ return
         'label' => ['type' => 'label', 'name' => 'subject', 'text' => 'Subject'],
         'checkbox' => [
         [
-            'checkbox' => ['type' => 'checkbox', 'name' => 'subject[]',  'value' => 'English', ],
+            'checkbox' => ['type' => 'checkbox', 'name' => 'subject[]', null, 'value' => 'English', ],
             'label' => ['type' => 'label', 'name' => 'subject', 'text' => 'English'],
         ],
         [
-            'checkbox' => ['type' => 'checkbox', 'name' => 'subject[]',  'value' => 'Maths' ],
+            'checkbox' => ['type' => 'checkbox', 'name' => 'subject[]', null, 'value' => 'Maths' ],
             'label' => ['type' => 'label', 'name' => 'subject', 'text' => 'Maths'],
         ],
         [
-            'checkbox' => ['type' => 'checkbox', 'name' => 'subject[]',  'value' => 'History'],
+            'checkbox' => ['type' => 'checkbox', 'name' => 'subject[]', null, 'value' => 'History'],
             'label' => ['type' => 'label', 'name' => 'subject', 'text' => 'History'],
         ],
         [
-            'checkbox' => ['type' => 'checkbox', 'name' => 'subject[]',  'value' => 'Science'],
+            'checkbox' => ['type' => 'checkbox', 'name' => 'subject[]', null, 'value' => 'Science'],
             'label' => ['type' => 'label', 'name' => 'subject', 'text' => 'Science'],
         ],
         [
-            'checkbox' => ['type' => 'checkbox', 'name' => 'subject[]',  'value' => 'Art'],
+            'checkbox' => ['type' => 'checkbox', 'name' => 'subject[]', null, 'value' => 'Art'],
             'label' => ['type' => 'label', 'name' => 'subject', 'text' => 'Art'],
         ],
     ],

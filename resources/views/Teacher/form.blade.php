@@ -46,7 +46,7 @@
 <div class='form-group row'>
     {!! Form::label('subject', 'Subject') !!}
     <div class="col-sm-11">
-       {!! Form::select('subject', ['Maths' => 'Maths','English' => 'English' ,'Science' => 'Science','History' => 'History'],null,['class' => 'form-control', 'id' => 'subject','placeholder' => 'Select Subject']) !!}
+       {!! Form::select('subject', ['Maths' => 'Maths','English' => 'English' ,'Science' => 'Science','History' => 'History','Art' => 'Art'],null,['class' => 'form-control', 'id' => 'subject','placeholder' => 'Select Subject']) !!}
     </div>
 </div>
 

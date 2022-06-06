@@ -17,9 +17,9 @@ class TeacherController extends Controller
     public function index()
     {
 
-        // $teachers = DB::table('teachers')->select('students.name As Stu_name','students.number As Stu_number','students.email As Stu_email','students.subject As Stu_subject','teachers.name As tech_name','teachers.number As tech_number','teachers.email As tech_email','teachers.subject As tech_subject')->join('students','teachers.subject','=','students.subject')->orderBy('students.name')->get();
+        $teachers = DB::table('teachers')->select('teachers.id As id','students.name As Stu_name','students.number As Stu_number','students.email As Stu_email','students.subject As Stu_subject','teachers.name As tech_name','teachers.number As tech_number','teachers.email As tech_email','teachers.subject As tech_subject')->join('students','teachers.subject','=','students.subject')->orderBy('students.name')->get();
 
-        $teachers = DB::table('teachers')->select('teachers.id As id','students.name As Stu_name','students.number As Stu_number','students.email As Stu_email','students.subject As Stu_subject','teachers.name As tech_name','teachers.number As tech_number','teachers.email As tech_email','teachers.subject As tech_subject')->leftJoin('students','teachers.subject','=','students.subject')->orderBy('teachers.name')->get();
+        // $teachers = DB::table('teachers')->select('teachers.id As id','students.name As Stu_name','students.number As Stu_number','students.email As Stu_email','students.subject As Stu_subject','teachers.name As tech_name','teachers.number As tech_number','teachers.email As tech_email','teachers.subject As tech_subject')->leftJoin('students','teachers.subject','=','students.subject')->orderBy('teachers.name')->get();
 
         return view('Teacher.index',compact('teachers'));
     }

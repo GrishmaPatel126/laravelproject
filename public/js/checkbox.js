@@ -7,8 +7,17 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./resources/js/checkbox.js":
+/*!**********************************!*\
+  !*** ./resources/js/checkbox.js ***!
+  \**********************************/
+/***/ (() => {
+
+eval("$(document).ready(function () {\n  [].forEach.call(document.querySelectorAll('input[name=\"subject\"]:checked'), function (cb) {\n    console.logbb.value();\n  });\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvanMvY2hlY2tib3guanMuanMiLCJuYW1lcyI6WyIkIiwiZG9jdW1lbnQiLCJyZWFkeSIsImZvckVhY2giLCJjYWxsIiwicXVlcnlTZWxlY3RvckFsbCIsImNiIiwiY29uc29sZSIsImxvZ2JiIiwidmFsdWUiXSwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9qcy9jaGVja2JveC5qcz9hZmFmIl0sInNvdXJjZXNDb250ZW50IjpbIiQoZG9jdW1lbnQpLnJlYWR5KGZ1bmN0aW9uKClcbntcbiAgICBbXS5mb3JFYWNoLmNhbGwoZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnaW5wdXRbbmFtZT1cInN1YmplY3RcIl06Y2hlY2tlZCcpLCBmdW5jdGlvbihjYikge1xuICAgICAgICBjb25zb2xlLmxvZ2JiLnZhbHVlKCk7XG4gICAgfSlcbn0pO1xuXG4iXSwibWFwcGluZ3MiOiJBQUFBQSxDQUFDLENBQUNDLFFBQUQsQ0FBRCxDQUFZQyxLQUFaLENBQWtCLFlBQ2xCO0VBQ0ksR0FBR0MsT0FBSCxDQUFXQyxJQUFYLENBQWdCSCxRQUFRLENBQUNJLGdCQUFULENBQTBCLCtCQUExQixDQUFoQixFQUE0RSxVQUFTQyxFQUFULEVBQWE7SUFDckZDLE9BQU8sQ0FBQ0MsS0FBUixDQUFjQyxLQUFkO0VBQ0gsQ0FGRDtBQUdILENBTEQifQ==\n//# sourceURL=webpack-internal:///./resources/js/checkbox.js\n");
+
+/***/ }),
 
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
@@ -16,6 +25,7 @@
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9hcHAuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAuc2Nzcz9hODBiIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/app.scss\n");
 
 /***/ })
@@ -106,7 +116,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/js/js": 0,
+/******/ 			"/js/checkbox": 0,
 /******/ 			"css/app": 0
 /******/ 		};
 /******/ 		
@@ -157,6 +167,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
+/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/checkbox.js")))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	

@@ -21,3 +21,4 @@ $fieldcheckbox = config('checkboxfields');
 @endforeach
 </div>
 @endforeach
+<Script src="{{asset('js/checkbox.js')}}"></Script>
